@@ -16,8 +16,8 @@ def show_book_form():
 
 @app.route('/book', methods=['POST','GET'])
 def do_book_room():
-    room_number = request.form.get("room_number")
-    guest_name = request.form.get("guest_name")
+    room_number = request.form.get("room_number").strip()
+    guest_name = request.form.get("guest_name").strip()
     msg = request.form.get("msg")
     rooms[room_number] = guest_name
     if room_number in rooms:
