@@ -9,5 +9,5 @@ def test_devide():
     assert 1 == devide(2,2)
     assert 10 == devide(10,1)
     assert 3 == devide(9,3)
-    assert -1 == devide(0,0)
+    assert -1 == devide(9,0)
     assert -1 == devide(0,4)
