@@ -11,7 +11,7 @@ jobs:
       # Replace this with a real test runner invocation
       - run:
           name: Run tests
-          command: python -m pytest test -v
+          command: python -m pytest test -v --cov
   build:
     docker:
       - image: cimg/base:stable
